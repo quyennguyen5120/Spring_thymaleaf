@@ -10,15 +10,16 @@ public class CategoryModal {
     private boolean isActive;
     private String parentCode;
     public static List<CategoryModal> lstCategoryModal = null;
+
     static {
         lstCategoryModal = new ArrayList<CategoryModal>();
-        lstCategoryModal.add(new CategoryModal(0,"Thời sự", "TS",true,null));
-        lstCategoryModal.add(new CategoryModal(1,"Góc nhìn", "GN",true,null));
-        lstCategoryModal.add(new CategoryModal(2,"Thế giới", "TG",true,null));
-        lstCategoryModal.add(new CategoryModal(3,"Chính trị", "CT",true,"TS"));
-        lstCategoryModal.add(new CategoryModal(4,"Dân sinh", "DS",true,"TS"));
-        lstCategoryModal.add(new CategoryModal(5,"Covid 19", "C19",true,"GN"));
-        lstCategoryModal.add(new CategoryModal(6,"Nga vs Ukr", "NVU",true,"TG"));
+        lstCategoryModal.add(new CategoryModal(0, "Thời sự", "TS", true, null));
+        lstCategoryModal.add(new CategoryModal(1, "Góc nhìn", "GN", true, null));
+        lstCategoryModal.add(new CategoryModal(2, "Thế giới", "TG", true, null));
+        lstCategoryModal.add(new CategoryModal(3, "Chính trị", "CT", true, "TS"));
+        lstCategoryModal.add(new CategoryModal(4, "Dân sinh", "DS", true, "TS"));
+        lstCategoryModal.add(new CategoryModal(5, "Covid 19", "C19", true, "GN"));
+        lstCategoryModal.add(new CategoryModal(6, "Nga vs Ukr", "NVU", true, "TG"));
     }
 
     public CategoryModal() {

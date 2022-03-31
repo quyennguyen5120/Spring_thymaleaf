@@ -27,11 +27,12 @@ public class StudentModal {
     }
 
     public static List<StudentModal> smmmm = null;
-    static{
+
+    static {
         smmmm = new ArrayList<StudentModal>();
-        smmmm.add(new StudentModal("1","Mỳ gà",true));
-        smmmm.add(new StudentModal("2","Mỳ lợn",true));
-        smmmm.add(new StudentModal("3","Mỳ bò",false));
+        smmmm.add(new StudentModal("1", "Mỳ gà", true));
+        smmmm.add(new StudentModal("2", "Mỳ lợn", true));
+        smmmm.add(new StudentModal("3", "Mỳ bò", false));
     }
 
     public StudentModal() {

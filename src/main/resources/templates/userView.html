@@ -17,9 +17,9 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item" th:each=" item : ${listCategroy}">
-                    <a th:text="${item.name}" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    <a th:text="${item.name}" class="nav-link dropdown-toggle" href="#" th:id="${item.getName()}" role="button" data-toggle="dropdown" aria-expanded="false">
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu" aria-labelledby="${item.getName()}">
                         <ul>
                             <li th:if="${item.getChilds().size() > 0}" th:each="child : ${item.getChilds()}" th:text="${child.name}"  class="dropdown-item" href="#"></li>
                         </ul>

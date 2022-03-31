@@ -19,4 +19,9 @@ public class UserController {
         model.addAttribute("listCategroy", categoryService.getListByDto());
         return "userView";
     }
+
+    @GetMapping("/indexxx")
+    public String indexxx(){
+        return "testFragment";
+    }
 }
